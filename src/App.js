@@ -35,12 +35,10 @@ const App = () => {
       animationPercent: percentage,
     });
   };
-  const songEndHandler = () => {
+  const songEndHandler = async () => {
     const currentIndex = songs.findIndex((song) => song.id === currentSong.id);
     setCurrentSong(songs[(currentIndex + 1) % songs.length]);
-    if (isPlaying) {
-      audioRef.current.play().then((audio) => [audioRef.current.play()]);
-    }
+    setIsPlaying(false);
   };
   return (
     <>
