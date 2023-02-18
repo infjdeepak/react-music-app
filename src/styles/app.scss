@@ -1,0 +1,97 @@
+$header1: 4rem;
+$header2: 3.5rem;
+$header3: 3rem;
+$header4: 2.5rem;
+$text: 2rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(155, 155, 155, 0.5) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background: transparent;
+  background-color: rgba(155, 155, 155, 0.5);
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+h1 {
+  font-size: $header1;
+}
+h2 {
+  font-size: $header2;
+}
+h3 {
+  font-size: $header3;
+}
+h4,
+h5 {
+  font-size: $header4;
+}
+h1,
+h2,
+h5 {
+  color: rgb(41, 40, 40);
+}
+h3,
+h4 {
+  font-weight: 400;
+  color: rgb(100, 100, 100);
+}
+p,
+span,
+input,
+a,
+button {
+  font-size: $text;
+}
+.music-player {
+  min-height: 90vh;
+  padding: 2rem 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.music-player.active {
+  margin-left: 40rem;
+}
+@import "nav";
+@import "song";
+@import "player";
+@import "library";
+
+@media screen and (max-width: 750px) {
+  .library {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  html {
+    font-size: 53%;
+  }
+}
+@media screen and (max-width: 540px) {
+  html {
+    font-size: 45%;
+  }
+  .time-control {
+    width: 45rem;
+  }
+}
