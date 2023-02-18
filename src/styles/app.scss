@@ -61,7 +61,8 @@ button {
   font-size: $text;
 }
 .music-player {
-  min-height: 90vh;
+  min-height: 80vh;
+  min-height: 80svh;
   padding: 2rem 5%;
   display: flex;
   flex-direction: column;
