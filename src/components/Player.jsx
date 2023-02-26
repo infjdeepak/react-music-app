@@ -137,7 +137,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
   .input-track {
     display: flex;
     gap: 1rem;
