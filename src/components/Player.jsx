@@ -100,7 +100,7 @@ const Player = ({ audioRef }) => {
         >
           <input
             type="range"
-            value={currentTime}
+            value={Math.round(currentTime)}
             max={duration ? duration : 0}
             onChange={dragHandler}
           />
