@@ -142,11 +142,11 @@ const Wrapper = styled.div`
     display: flex;
     gap: 1rem;
     input {
-      width: 40rem;
+      width: 50rem;
     }
     @media screen and (max-width: 700px) {
       input {
-        width: 100%;
+        width: 30rem;
       }
     }
   }
@@ -204,7 +204,6 @@ const Wrapper = styled.div`
       cursor: pointer;
     }
     @media screen and (max-width: 700px) {
-      width: 25rem;
       gap: 3rem;
     }
   }

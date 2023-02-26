@@ -78,6 +78,7 @@ const Wrapper = styled.section`
   gap: 3rem;
   @media screen and (max-width: 700px) {
     gap: 5rem;
+    justify-content: space-around;
   }
 `;
 export default Home;
